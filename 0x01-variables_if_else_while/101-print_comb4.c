@@ -19,7 +19,7 @@ for (n = 48; n < 58; n++)
 	putchar(l);
 	if (n != 55 || m != 56)
 	{
-        putchar(',');
+	putchar(',');
 	putchar(' ');
 	}
 	}
