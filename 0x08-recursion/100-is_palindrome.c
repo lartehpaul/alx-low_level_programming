@@ -11,7 +11,7 @@ int long_1(char *s)
 {
 	if (*s != '\0')
 	{
-		return (1 + long_1(s + 1));
+	return (1 + long_1(s + 1));
 	}
 	return (0);
 
@@ -51,4 +51,4 @@ int is_palindrome(char *s)
 
 	l = long_1(s);
 	return (compare(s, l));
-}i
+}
