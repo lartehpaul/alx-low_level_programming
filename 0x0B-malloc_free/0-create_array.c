@@ -1,17 +1,36 @@
-#include <stdio.h>
-
+#include "main.h"
+#include <stdlib.h>
 /**
- * main - is a function that prints the name.
- *@argc: is an argument counter for char.
- *@argv: is an agument value for char.
- *Return: Returns always success.
-**/
-
-int main(int argc, char *argv[])
+  *create_array - creates an array of chars and initializes it with
+  *a specific char.
+  *@size: size of array.
+  *@c: char to initialize array with.
+  *
+  *Return: NULL if it fails or
+  *Pointer to array.
+  */
+char *create_array(unsigned int size, char c)
 {
-int i = argc - argc;
+	char *arr;
+	unsigned int i;
 
-printf("%s\n", argv[i]);
+	if (size == 0)
+	{
+	return (NULL);
+	}
 
-return (0);
+	arr = malloc(sizeof(char) * size);
+
+	/* check if malloc was successful */
+
+	if (arr == NULL)
+	return (NULL);
+
+	for (i = 0; i < size; i++)
+	{
+	arr[i] = c;
+	}
+
+	return (arr);
+
 }
