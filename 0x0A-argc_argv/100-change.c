@@ -36,8 +36,7 @@ coins++;
 else if (cents % 2 < cents)
 {
 cents -= 2;
-coins++;
-}
+coins++; }
 else if (cents % 1 < cents)
 {
 cents -= 1;
@@ -51,5 +50,5 @@ printf("Error\n");
 return (1);
 }
 printf("%d\n", coins);
-return (0);
+ return (0);
 }
