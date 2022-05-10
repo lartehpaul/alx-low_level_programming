@@ -50,5 +50,5 @@ printf("Error\n");
 return (1);
 }
 printf("%d\n", coins);
- return (0);
+return (0);
 }
